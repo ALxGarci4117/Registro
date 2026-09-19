@@ -35,7 +35,7 @@ def obtener_ultimos(n=10):
     try:
         cursor = conn.cursor()
         cursor.execute(
-            f"SELECT TOP {int(n)} nombre, fecha, hora FROM registros ORDER BY id DESC"
+            f"SELECT TOP {int(n)} nombre, fecha, hora FROM super_alejandro ORDER BY id DESC"
         )
         return cursor.fetchall()
     finally:
