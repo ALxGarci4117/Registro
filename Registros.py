@@ -22,7 +22,7 @@ def guardar_registro(nombre, fecha, hora):
     try:
         cursor = conn.cursor()
         cursor.execute(
-            "INSERT INTO registros (nombre, fecha, hora) VALUES (%s, %s, %s)",
+            "INSERT INTO super_alejandro (nombre, fecha, hora) VALUES (%s, %s, %s)",
             (nombre, fecha.strftime("%Y-%m-%d"), hora),
         )
         conn.commit()
